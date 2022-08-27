@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Create 2D random array: ");
+        System.out.println("Task #1\nCreate 2D random array: ");
         int[][] random = new int[5][5];
         for (int i = 0; i < random.length; i++) {
             for (int j = 0; j < random.length; j++) {
-                random[i][j] = (int) (Math.random() * 10);
+                random[i][j] = (int) (Math.random() * 201) - 100;
             }
         }
         printArray(random);
@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Average: " + findAverage(random));
 
         int[] array =  new int[]{5,6,3,2,5,1,4,9,12,44,51,0,3};
-        System.out.print("\nSorted array: ");
+        System.out.print("\nTask #2\nSorted array: ");
         printArray(bubbleSort(array));
     }
     public static int[] bubbleSort(int[] array) {
